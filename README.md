@@ -107,3 +107,278 @@
 
     </body>
 </html>
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the side navigation */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f9eaea;
+    overflow-x: hidden;
+  }
+
+  /*make the active user text inherit style from container*/
+  
+  .inbox__people{
+      color: white;
+      padding: 16px;
+  }
+
+  .container{
+    width:70%;
+    margin:auto;
+    overfloe:hidden;
+  }
+
+  
+  
+  /* Side navigation links */
+  .sidenav a {
+    color: orange;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+  }
+
+  .sodeav ul{
+    margin:0;
+    padding:0;
+  }
+
+  header #branding{
+    float:left;
+  }
+
+  header #branding h1{
+    margin:0;
+  }
+  
+  header nav{
+    flaot:right;
+    margin-top:10px;
+  }
+
+  header .highlight, header .current a{
+    color: blue;
+    font-weight:bold;
+  }
+
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: #35424a;
+    color: tomato;
+    padding-top: 30px;
+  }
+ 
+  /*showcase */
+  #showcase{
+    min-height:400px;
+    background:url('showcase2.jpeg') no-repeat 0 -300px;
+    text-align:center;
+    color: tomato;
+  }
+  
+  #showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margi-bottom:10px;
+  }
+
+  #showcase p{
+    font-size:20px;
+  }
+
+  #client{
+    padding:15px;
+    color:black;
+    background:lightblue;
+  }
+
+  #client h1{
+    float:middle;
+  }
+
+  #client form{
+    float:right;
+    margin-top:15px
+  }
+
+  #client input[type="email"]{
+    padding:4px;
+    heigth:25px;
+    width:250px;
+  }
+
+  .button_1{
+    height:30px;
+    background:tomato;
+  }
+
+  /*chat*/
+  .button{
+    botder: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .button:hover{
+    filter: brightness(0.9);
+  }
+
+  .button:active{
+    transform: translateY(2px);
+  }
+
+  .person-selector{
+    dispaly: flex;
+    justify-contnt: center;
+    gap: 1em;
+    margin: 3em auto 1em;
+    max-width:40em;
+  }
+
+  .person-selector-button{
+    width: 100%;
+    background-color: tomato;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  .active-person{
+    background: blue;
+  }
+
+  .chat-container{
+    background: darkblue
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5em;
+    padding: 0.5em 1.25em;
+    margin: auto;
+  }
+
+  .chat-header{
+    margin-bottom: 1em;
+    color: green;
+  }
+
+  .chat-header h2{
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  .chat-messages{
+    height: 23em;
+    overflow-y: scroll;
+  }
+
+  /*boxes*/
+  #boxes{
+    margin-top:20px;
+  }
+
+  #boxes .boxes{
+    float:left;
+    width:30%;
+    padding:10px;
+    text-align: center;
+  }
+
+  #boxes .boxes img{
+    width:90px;
+  }
+
+  /* Style the content */
+  .content {
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:whitesmoke;
+    background-color:grey;
+    text-align:center;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidenav {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid Blue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.inbox__people {
+    background-color: Orange;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 5px;
+}
+
+.message-sender {
+    font-weight: bold;
+}
+
+.message-content {
+    margin-top: 5px;
+}
+
+.message_form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.message_form input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.message_form button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.message_form button:hover {
+    background-color: #45a049;
+}
